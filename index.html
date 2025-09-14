@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yesaya Arya - Data Enthusiast</title>
   <style>
-    /* Reset & base */
     body, html {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
+      height: 100%;
     }
 
     /* Navbar */
@@ -19,17 +18,13 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: #0b1d36;
+      background: rgba(11, 29, 54, 0.95); /* biru gelap transparan */
       color: white;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       padding: 15px 40px;
       z-index: 1000;
-    }
-    nav h1 {
-      margin: 0;
-      font-size: 1.2rem;
     }
     nav ul {
       list-style: none;
@@ -50,7 +45,7 @@
     /* Hero Section */
     #hero {
       height: 100vh;
-      background-color: #2f2f2f; /* abu-abu polos */
+      background: url('background.jpg') no-repeat center center/cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -66,7 +61,7 @@
       color: white;
     }
     #hero h1 b {
-      color: #00bcd4;
+      color: #00bcd4; /* biru pada ARYA */
     }
     #hero p {
       font-size: 1.2rem;
@@ -104,37 +99,17 @@
     .social a:hover {
       color: #64ffda;
     }
-
-    /* Placeholder section style */
-    section {
-      padding: 80px 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      color: #0b1d36;
-    }
-
-    footer {
-      background: #0b1d36;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav>
-    <h1>Yesaya Arya</h1>
     <ul>
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#resume">Resume</a></li>
-      <li><a href="#projects">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
     </ul>
   </nav>
 
@@ -144,7 +119,7 @@
       <h1><span>YESAYA</span> <b>ARYA</b></h1>
       <p>Data Enthusiast</p>
       <a href="cv.pdf" class="btn">Resume</a>
-      <a href="#projects" class="btn">Portfolio</a>
+      <a href="#portfolio" class="btn">Portfolio</a>
     </div>
 
     <!-- Social Media -->
@@ -155,29 +130,5 @@
     </div>
   </section>
 
-  <!-- Placeholder sections (isi nanti) -->
-  <section id="about">
-    <h2>About</h2>
-    <p>Isi nanti...</p>
-  </section>
-
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>Isi nanti...</p>
-  </section>
-
-  <section id="projects">
-    <h2>Portfolio</h2>
-    <p>Isi nanti...</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Isi nanti...</p>
-  </section>
-
-  <footer>
-    © 2025 Yesaya Arya. All Rights Reserved.
-  </footer>
 </body>
 </html>
