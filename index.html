@@ -12,6 +12,7 @@
       padding: 0;
       font-family: Arial, sans-serif;
       height: 100%;
+      scroll-behavior: smooth;
     }
 
     /* Navbar */
@@ -20,10 +21,10 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.95); /* hitam transparan */
+      background: rgba(0, 0, 0, 0.95);
       color: white;
       display: flex;
-      justify-content: flex-start; /* menu di kiri */
+      justify-content: flex-start;
       align-items: center;
       padding: 15px 40px;
       z-index: 1000;
@@ -43,6 +44,11 @@
     nav ul li a:hover {
       color: #64ffda;
     }
+    nav .phone {
+      margin-left: auto;
+      font-size: 0.9rem;
+      color: #64ffda;
+    }
 
     /* Hero Section */
     #hero {
@@ -60,31 +66,31 @@
       line-height: 1.1;
     }
     #hero h1 span {
-      font-size: 1.6rem; /* YESAYA kecil */
+      font-size: 1.6rem;
       font-weight: 300;
       display: block;
       color: white;
-      letter-spacing: 6px; /* jarak antar huruf */
+      letter-spacing: 6px;
     }
     #hero h1 b {
-      font-size: 4rem; /* ARYA besar */
-      font-weight: 800; /* tebal */
-      color: white; /* putih */
-      letter-spacing: 8px; /* jarak antar huruf */
+      font-size: 4rem;
+      font-weight: 800;
+      color: white;
+      letter-spacing: 8px;
     }
     #hero p {
       font-size: 1rem;
       margin: 25px 0 35px 0;
-      color: #d1d1d1; /* abu tipis */
+      color: #d1d1d1;
       font-style: italic;
-      letter-spacing: 5px; /* jarak antar huruf */
+      letter-spacing: 5px;
     }
     #hero a.btn {
       display: inline-block;
       padding: 10px 30px;
       border: 2px solid white;
       border-radius: 30px;
-      margin-right: 25px; /* kasih jarak lebih */
+      margin-right: 25px;
       text-decoration: none;
       color: white;
       transition: 0.3s;
@@ -104,11 +110,49 @@
     }
     .social a {
       color: white;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       transition: 0.3s;
     }
     .social a:hover {
       color: #64ffda;
+    }
+
+    /* About Section */
+    #about {
+      min-height: 100vh;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px 80px;
+    }
+    #about .text {
+      flex: 1;
+      padding-right: 40px;
+    }
+    #about .text h2 {
+      font-size: 2rem;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+    #about .text p {
+      line-height: 1.8;
+      font-size: 1rem;
+      color: #ddd;
+      margin: 10px 0;
+    }
+    #about .text .highlight {
+      color: #64ffda;
+    }
+    #about .image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    #about .image img {
+      max-width: 400px;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -122,6 +166,7 @@
       <li><a href="#resume">Resume</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
     </ul>
+    <div class="phone">📞 628997111168</div>
   </nav>
 
   <!-- Hero Section -->
@@ -141,6 +186,26 @@
       <a href="https://linkedin.com/in/yesaya-arya" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/Yesaya03" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://wa.me/628997111168" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="text">
+      <h2>ABOUT</h2>
+      <p class="highlight">yesaya.kristuadji@gmail.com</p>
+      <p>
+        Data Analyst dengan pengalaman lebih dari 2 tahun dalam analisis data, visualisasi, otomatisasi, serta kepemimpinan tim lintas cabang. 
+        Terbiasa menggunakan Python, SQL, dan Power BI untuk mengembangkan model prediktif (Linear Regression, ARIMA) serta melakukan analisis statistik 
+        (Hypothesis Testing, Correlation Analysis) yang mendukung pengambilan keputusan strategis manajemen. 
+        Berhasil meningkatkan efisiensi pelaporan hingga 50%, mengoptimalkan inventory antar cabang, serta memberikan rekomendasi bisnis berbasis data 
+        yang berdampak pada peningkatan revenue perusahaan.
+      </p>
+      <p class="highlight">Indonesia, Jawa Timur</p>
+      <p>Kabupaten Malang</p>
+    </div>
+    <div class="image">
+      <img src="profile.jpg" alt="Yesaya Arya">
     </div>
   </section>
 
